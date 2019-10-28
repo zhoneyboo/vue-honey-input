@@ -4,6 +4,7 @@
 
 * **Password** <br />
     Input password help you to validate user's input.
+    * Reference - https://www.w3resource.com/javascript/form/password-validation.php
     * Example `<VueHoneyInput type="password" password="alphanumeric" min="5" max="20"></VueHoneyInput>`
     * Password component allowed accepted options <br />
     
@@ -23,5 +24,4 @@ alphanumeric | which contain only characters, numeric digits, underscore and fir
 alphanumeric_camelcase | which contain at least one numeric digit, one uppercase and one lowercase letter.
 alphanumeric_specialcharacter | which contain at least one numeric digit, one uppercase and one lowercase letter.
 alphanumeric_specialcharacter_camelcase | which contain at least one numeric digit and a special character.
-<br />
-Reference - https://www.w3resource.com/javascript/form/password-validation.php
+
