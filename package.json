@@ -1,0 +1,36 @@
+{
+  "name": "vue-honey",
+  "version": "1.0.11",
+  "description": "Vue Honey",
+  "main": "dist/vue-honey.umd.js",
+  "module": "dist/vue-honey.esm.js",
+  "unpkg": "dist/vue-honey.min.js",
+  "browser": {
+    "./sfc": "src/vue-honey.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/vue-honey.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/vue-honey.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/vue-honey.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u0016https://github.com/zhoneyboo/vue-honey-input.git"
+  },
+  "keywords": [
+    "Vue",
+    "Honey"
+  ],
+  "author": "zHoneyBoo",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "rollup": "^1.26.0",
+    "rollup-plugin-buble": "^0.19.8",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-vue": "^5.1.2",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
