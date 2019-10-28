@@ -2,4 +2,4 @@
 
 ## Components
 
-###### * Password
+    * **Password**
