@@ -20,7 +20,7 @@ max | integer | 255 | 0 - 255
 
 Value | Description
 ----- | ------------
-alphanumeric | which contain only characters, numeric digits, underscore and first character must be a letter.
+alphanumeric | which contain only characters, numeric digits and underscore
 alphanumeric_camelcase | which contain at least one numeric digit, one uppercase and one lowercase letter.
 alphanumeric_specialcharacter | which contain at least one numeric digit, one uppercase and one lowercase letter.
 alphanumeric_specialcharacter_camelcase | which contain at least one numeric digit and a special character.
