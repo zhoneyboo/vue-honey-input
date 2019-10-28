@@ -4,13 +4,24 @@
 
 * **Password** <br />
     Input password help you to validate user's input.
-    * Options
-Dependency | Old version | New version |
----------- | ----------- | -----------
-Spring Boot | `1.3.5.RELEASE` | `1.4.3.RELEASE`
-Gradle | `2.13` | `3.2.1`
-Gradle plugin <br/>`com.gorylenko.gradle-git-properties` | `1.4.16` | `1.4.17`
-`org.webjars:requirejs` | `2.2.0` | `2.3.2`
-`org.webjars.npm:stompjs` | `2.3.3` | `2.3.3`
-`org.webjars.bower:sockjs-client` | `1.1.0` | `1.1.1`
     * Example `<VueHoneyInput type="password" password="alphanumeric" min="5" max="20"></VueHoneyInput>`
+    * Password component allowed accepted options <br />
+    
+    
+Options  |  Type   | Default | Value |
+-------- | ------- | ------- | ----- |
+type | string | "password"| none
+password | string | "alphanumeric" | "alphanumeric", "alphanumeric_camelcase", "alphanumeric_specialcharacter", "alphanumeric_specialcharacter_camelcase"
+min | integer | 0 | 0 - 255
+max | integer | 255 | 0 - 255
+
+* Password <br />
+
+Value | Description
+----- | ------------
+alphanumeric | which contain only characters, numeric digits, underscore and first character must be a letter.
+alphanumeric_camelcase | which contain at least one numeric digit, one uppercase and one lowercase letter.
+alphanumeric_specialcharacter | which contain at least one numeric digit, one uppercase and one lowercase letter.
+alphanumeric_specialcharacter_camelcase | which contain at least one numeric digit and a special character.
+<br />
+Reference - https://www.w3resource.com/javascript/form/password-validation.php
